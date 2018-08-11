@@ -1,0 +1,90 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Top_Football_Clubs.DetailsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:GoogleAds="clr-namespace:GoogleAds;assembly=GoogleAds"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="#090e2d">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="FOOTBALL FUN FACTS" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Fun Facts" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,15">
+            
+            <ScrollViewer>
+                <StackPanel> 
+            <TextBlock
+                x:Name="showText"
+                Loaded="showText_Loaded"
+                TextWrapping="Wrap"
+                Opacity=".8"
+                
+                >
+                        
+            </TextBlock>
+
+
+                    <TextBlock
+                x:Name="showText1"
+                Loaded="showText_Loaded"
+                TextWrapping="Wrap"
+                Opacity=".8"
+                
+                >
+
+                    </TextBlock>
+
+
+                    <TextBlock
+                x:Name="showText2"
+                Loaded="showText_Loaded"
+                TextWrapping="Wrap"
+                Opacity=".8"
+                
+                >
+
+                    </TextBlock>
+
+
+                </StackPanel>
+            </ScrollViewer>
+
+        </Grid>
+
+
+        <Grid x:Name="AdLayout2" Grid.Row="2">
+            <GoogleAds:AdView Visibility="Visible"
+              AdUnitID="ca-app-pub-9480369282691855/5862602725"
+                          Width="500"
+                          Margin="0,10,10,0"
+                          Format="Banner"
+                           ReceivedAd="OnAdReceived"
+                          FailedToReceiveAd="OnFailedToReceiveAd"
+                          VerticalAlignment="Bottom" Background="Gray" />
+        </Grid>
+
+
+
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

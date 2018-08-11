@@ -1,0 +1,416 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Top_Football_Clubs.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:GoogleAds="clr-namespace:GoogleAds;assembly=GoogleAds"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/images/background1.jpg"/>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="FOOTBALL FUN FACTS" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            
+        </StackPanel>
+
+
+
+
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            
+            <phone:Pivot >
+
+                <phone:PivotItem Header="EPL"  >
+                    
+
+                    <Grid>
+
+                        <ScrollViewer >
+
+                            <StackPanel >
+
+                     
+
+
+
+                                <Button
+                
+                x:Name="Chelsea"
+                Height="110"
+                Content="Chelsea"
+                FontSize="40"
+                Background="#77000000"
+                Click="Chelsea_Click"
+                />
+
+                        <Button
+                
+                x:Name="Manchester_City"
+                Height="110"
+                Content="Manchester City"
+                FontSize="40"
+                Background="#77000000"
+                Click="Manchester_City_Click"
+                />
+
+                        <Button
+                
+                x:Name="Arsenal"
+                Height="110"
+                Content="Arsenal"
+                FontSize="40"
+                Background="#77000000"
+                Click="Arsenal_Click"
+                />
+
+                        <Button
+                
+                x:Name="Manchester_United"
+                Height="110"
+                Content="Manchester United"
+                FontSize="40"
+                Background="#77000000"
+                Click="Manchester_United_Click"
+                />
+
+                        <Button
+                
+                x:Name="Liverpool_FC"
+                Height="110"
+                Content="Liverpool"
+                FontSize="40"
+                Background="#77000000"
+                Click="Liverpool_FC_Click"
+                />
+
+                    </StackPanel>
+
+                        </ScrollViewer>
+
+                    </Grid>
+
+                </phone:PivotItem>
+
+
+
+
+
+
+
+
+                <phone:PivotItem Header="La Liga">
+
+
+                    <Grid>
+
+                        <ScrollViewer >
+
+                            <StackPanel >
+
+                                
+
+                                <Button
+                
+                x:Name="FC_Barcelona"
+                Height="110"
+                Content="Barcelona"
+                FontSize="40"
+                Background="#77000000"
+                Click="FC_Barcelona_Click"
+                />
+
+                                <Button
+                
+                x:Name="Real_Madrid"
+                Height="110"
+                Content="Real Madrid"
+                FontSize="40"
+                Background="#77000000"
+               Click="Real_Madrid_Click"
+                />
+
+                                <Button
+                
+                x:Name="Athletico_Madrid"
+                Height="110"
+                Content="Athletico Madrid"
+                FontSize="40"
+                Background="#77000000"
+                Click="Athletico_Madrid_Click"
+                />
+
+                                <Button
+                
+                x:Name="Valencia"
+                Height="110"
+                Content="Valencia"
+                FontSize="40"
+                Background="#77000000"
+                Click="Valencia_Click"
+                />
+
+                                <Button
+                
+                x:Name="Sevilla"
+                Height="110"
+                Content="Sevilla"
+                FontSize="40"
+                Background="#77000000"
+                Click="Sevilla_Click"
+                />
+
+                            </StackPanel>
+
+                        </ScrollViewer>
+
+                    </Grid>
+
+
+
+                </phone:PivotItem>
+
+
+
+
+                <phone:PivotItem Header="Bundesliga">
+
+                    <Grid>
+
+                        <ScrollViewer >
+
+                            <StackPanel >
+
+                                
+
+
+
+                                <Button
+                
+                x:Name="Bayern_Munich"
+                Height="110"
+                Content="Bayern Munich"
+                FontSize="40"
+                Background="#77000000"
+                Click="Bayern_Munich_Click"
+                />
+
+                                <Button
+                
+                x:Name="Wolfsburg"
+                Height="110"
+                Content="Wolfsburg"
+                FontSize="40"
+                Background="#77000000"
+                Click="Wolfsburg_Click"
+                />
+
+                                <Button
+                
+                x:Name="Borrusia_Monchengladbach"
+                Height="110"
+                Content="Borussia Dortmund"
+                FontSize="40"
+                Background="#77000000"
+                Click="Borrusia_Monchengladbach_Click"
+                />
+
+                                <Button
+                
+                x:Name="Bayer_Leverkusen"
+                Height="110"
+                Content="Bayer Leverkusen"
+                FontSize="40"
+                Background="#77000000"
+                Click="Bayer_Leverkusen_Click"
+                />
+
+
+                            </StackPanel>
+
+                        </ScrollViewer>
+
+                    </Grid>
+
+
+                </phone:PivotItem>
+
+
+                <phone:PivotItem Header="Serie A">
+
+                    <Grid>
+
+                        <ScrollViewer >
+
+                            <StackPanel >
+
+                               
+
+                                <Button
+                
+                x:Name="Juventus"
+                Height="110"
+                Content="Juventus"
+                FontSize="40"
+                Background="#77000000"
+                Click="Juventus_Click"
+                />
+
+                                <Button
+                
+                x:Name="Roma"
+                Height="110"
+                Content="Roma"
+                FontSize="40"
+                Background="#77000000"
+                Click="Roma_Click"
+                />
+
+                                <Button
+                
+                x:Name="Lazio"
+                Height="110"
+                Content="AC Milan"
+                FontSize="40"
+                Background="#77000000"
+                Click="Lazio_Click"
+                />
+
+                                <Button
+                
+                x:Name="Fiorentina"
+                Height="110"
+                Content="Fiorentina"
+                FontSize="40"
+                Background="#77000000"
+                Click="Fiorentina_Click"
+                />
+
+                                <Button
+                
+                x:Name="Napoli"
+                Height="110"
+                Content="Napoli"
+                FontSize="40"
+                Background="#77000000"
+                Click="Napoli_Click"
+                />
+
+                            </StackPanel>
+
+                        </ScrollViewer>
+
+                    </Grid>
+
+
+                </phone:PivotItem>
+
+
+
+                <phone:PivotItem Header="Ligue 1">
+
+                    <Grid>
+
+                        <ScrollViewer >
+
+                            <StackPanel >
+
+                                
+
+
+
+                                <Button
+                
+                x:Name="PSG"
+                Height="110"
+                Content="PSG"
+                FontSize="40"
+                Background="#77000000"
+                Click="PSG_Click"
+                />
+
+                                <Button
+                
+                x:Name="Lyon"
+                Height="110"
+                Content="Lyon"
+                FontSize="40"
+                Background="#77000000"
+                Click="Lyon_Click"
+                />
+
+                                <Button
+                
+                x:Name="Monaco"
+                Height="110"
+                Content="Monaco"
+                FontSize="40"
+                Background="#77000000"
+                Click="Monaco_Click"
+                />
+
+                                <Button
+                
+                x:Name="Marseille"
+                Height="110"
+                Content="Marseille"
+                FontSize="40"
+                Background="#77000000"
+                Click="Marseille_Click"
+                />
+
+                                
+
+                            </StackPanel>
+
+                        </ScrollViewer>
+
+                    </Grid>
+
+
+                </phone:PivotItem>
+
+
+
+            </phone:Pivot>
+           
+            
+        </Grid>
+
+
+        <Grid x:Name="AdLayout" Grid.Row="2">
+            <GoogleAds:AdView Visibility="Visible"
+              AdUnitID="ca-app-pub-9480369282691855/5862602725"
+                          Width="500"
+                          Margin="0,10,10,0"
+                          Format="Banner"
+                           ReceivedAd="OnAdReceived"
+                          FailedToReceiveAd="OnFailedToReceiveAd"
+                          VerticalAlignment="Bottom" Background="Gray" />
+        </Grid>
+
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
